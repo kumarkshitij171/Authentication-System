@@ -26,7 +26,7 @@ const Header = ({ user }) => {
 
                             <button type="button" className="flex items-center justify-center ml-auto text-white bg-black rounded-full w-9 h-9 lg:hidden">
                                 <img
-                                    className='rounded-full object-cover'
+                                    className='rounded-full object-cover max-h-10'
                                     src={user?.profilePicture ? user.profilePicture : "profile.png"} alt="" />
                             </button>
 
@@ -38,9 +38,9 @@ const Header = ({ user }) => {
 
                             <div className="hidden lg:flex lg:items-center lg:space-x-10">
 
-                                <div className='flex items-center bg-[#eee] md:p-1 rounded-md shadow-sm cursor-pointer h-9 md:h-10 w-44 md:w-72 pl-1'>
+                                <div className='flex items-center bg-[#e8e6e6] md:p-1 rounded-md shadow-sm cursor-pointer h-9 md:h-10 w-44 md:w-52 pl-1 '>
                                     <button>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3 md:w-6 md:h-6 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-6">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                                         </svg>
                                     </button>
@@ -52,7 +52,7 @@ const Header = ({ user }) => {
                                 </div>
 
                                 <button className="flex items-center justify-center w-10 h-10 text-white bg-black rounded-full">
-                                    <img className="rounded-full object-cover" src={user?.profilePicture ? user.profilePicture : "profile.png"} alt="" />
+                                    <img className="rounded-full object-cover max-h-10" src={user?.profilePicture ? user.profilePicture : "profile.png"} alt="" />
                                 </button>
                                 <p className="text-base font-medium text-black">{user?.name} </p>
                             </div>

@@ -13,7 +13,7 @@ const VerifyEmail = () => {
         if (!localStorage.getItem('AuthoBearer')) {
             navigate('/')
         }
-        if (user === null)
+        if (!user)
             fetch(`${import.meta.env.VITE_SERVER_BASE_URL}/api/v1/profile`, {
                 method: 'GET',
                 headers: {
@@ -32,7 +32,6 @@ const VerifyEmail = () => {
                     }
                 })
                 .catch(err => console.error(err))
-
     }, [])
     return (
         <div>

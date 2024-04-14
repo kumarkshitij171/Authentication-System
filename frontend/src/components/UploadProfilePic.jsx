@@ -58,7 +58,12 @@ const UploadProfilePic = () => {
     const handleNext = () => {
         const formData = new FormData();
         formData.append('profilePicture', ImageFile);
-        if (ImageFile === null && user.profilePicture === null)
+        // if user not select profile picture then redirect to option-select page 
+        if (!ImageFile && !user?.profilePicture) {
+            navigate('/option-select')
+        }
+        // else upload the profile picture and then redirect to option-select page
+        else {
             fetch(`${import.meta.env.VITE_SERVER_BASE_URL}/api/v1/upload-profile-pic`, {
                 method: 'PUT',
                 body: formData,
@@ -80,8 +85,7 @@ const UploadProfilePic = () => {
                         toast.error(data.message)
                     }
                 })
-        else
-            navigate('/option-select')
+        }
     }
 
     return (
@@ -92,7 +96,7 @@ const UploadProfilePic = () => {
                 <p className="text-xl mb-5 text-gray-500">Let others get you to know better! you can do these things later</p>
 
                 <p className="font-medium text-xl mb-3">Add an avatar</p>
-                <div className="flex gap-4 items-center ">
+                <div className="flex gap-4 items-center flex-wrap">
                     <img
                         className="w-40 h-40 rounded-full object-cover"
                         src={selectedImage === null ? (user?.profilePicture ? user.profilePicture : "profile.png") : (selectedImage)}
