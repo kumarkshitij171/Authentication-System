@@ -40,9 +40,9 @@ const OptionSelection = () => {
     }, [])
 
     return (
-        <div className="mt-24">
+        <div className="mt-24 ">
             <Toaster />
-            <div className="mb-32">
+            <div className="mb-32 px-7">
                 <h1 className="text-4xl font-bold text-center mb-2">What are you looking for?</h1>
                 <p className="text-center text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ullam non ratione totam nulla, necessitatibus ea optio delectus ipsam architecto.</p>
 

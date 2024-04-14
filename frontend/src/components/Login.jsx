@@ -46,7 +46,7 @@ const Login = () => {
     return (
         <div className='flex'>
             <Toaster />
-            <div className="left w-2/3 relative">
+            <div className="left md:w-2/3 relative mx-auto px-1">
                 <p className='absolute right-4 text-lg top-2'>Not a member? <button
                     onClick={() => navigate('/')}
                     className='text-blue-600'
@@ -126,7 +126,7 @@ const Login = () => {
 
                 </div>
             </div>
-            <div className="right h-screen w-1/3">
+            <div className="right h-screen w-1/3 hidden md:block">
                 <img
                     src="image.png"
                     className='h-full w-full' alt="Image" />

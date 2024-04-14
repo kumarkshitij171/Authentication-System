@@ -53,12 +53,12 @@ const Register = () => {
     return (
         <div className='flex'>
             <Toaster />
-            <div className="left h-screen w-1/3">
+            <div className="left h-screen w-1/3 hidden md:block">
                 <img
                     src="image.png"
                     className='h-full w-full' alt="Image" />
             </div>
-            <div className="right w-2/3 relative">
+            <div className="right md:w-2/3 relative mx-auto px-1">
                 <p className='absolute right-4 text-lg top-2'>Already a member? <button
                     onClick={() => navigate('/login')}
                     className='text-blue-600'

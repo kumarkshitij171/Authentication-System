@@ -89,11 +89,11 @@ const UploadProfilePic = () => {
     }
 
     return (
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center px-4">
             <Toaster />
-            <div className="mx-auto">
-                <h2 className="mt-40 font-bold text-5xl mb-3">Welcome! Let's create your profile</h2>
-                <p className="text-xl mb-5 text-gray-500">Let others get you to know better! you can do these things later</p>
+            <div className="">
+                <h2 className="mt-16 md:mt-40 font-bold text-5xl mb-3 text-center md:text-left">Welcome! Let's create your profile</h2>
+                <p className="text-xl mb-5 text-gray-500 text-center md:text-left">Let others get you to know better! you can do these things later</p>
 
                 <p className="font-medium text-xl mb-3">Add an avatar</p>
                 <div className="flex gap-4 items-center flex-wrap">
