@@ -50,9 +50,13 @@ Open http://localhost:5173 to view the frontend.
 - Express.js: For backend server development.
 - MongoDB: Database for storing data.
 - Cloudinary: Cloud storage for images.
-- Resend: For sending email verification links.
 - Bcrypt: For hashing passwords.
 - Jsonwebtoken: For generating and verifying JSON Web Tokens.
 - Vite: Frontend development server.
 - HotToast: For displaying toast notifications.
 - useContext: React hook for managing global state.
+- Resend: For sending email verification links.
+
+### Email Verification screenshot
+
+![Email Verification](image.png)
